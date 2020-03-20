@@ -4,6 +4,13 @@ import { ApolloProvider, useQuery } from '@apollo/react-hooks'; // for new useQu
 import apolloClient from './apolloSetup';
 import Posts from './posts/Posts';
 
+/**
+ * NOTE: Easiest way to start/test GraphQL queries
+ */
+// const c = new ApolloClient({
+//   uri: 'https://api.graph.cool/simple/v1/cjs4qo29b2w0c0130tfx6maca'})
+// c.query({ query: helloWorldQuery }).then((result) => console.log('query result:', result))
+
 const App = () => (
   <ApolloProvider client={apolloClient}>
     <Posts />
